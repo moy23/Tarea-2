@@ -1,0 +1,63 @@
+Ejercicio 1 cuadro que cambia de color
+
+function setup() {
+
+  createCanvas(400, 400);
+
+}
+
+
+function draw() {
+
+  background(60, 40, 93);
+
+  rect(150, 150, 100, 100);
+
+  if (mouseX > 149 & mouseX < 251) {
+
+    if (mouseY > 149 & mouseY < 251) {
+
+      if (mouseIsPressed) {
+
+        background(230, 170, 50);
+
+        rect(150, 150, 100, 100);
+
+      }
+
+    }
+
+  }
+
+}
+
+Ejercicio 2 circulo que rebota
+function setup() {
+
+  createCanvas(400, 400);
+
+}
+
+
+var x = 200;
+
+var vel = 1;
+
+
+function draw() {
+
+  background(170);
+
+  fill(10, 200, 50);
+
+  ellipse(x, 200, 50, 50);
+
+  x = x + vel;
+
+  if (x > 370 || x < 30) {
+
+    vel = vel * -1;
+
+  }
+
+}
